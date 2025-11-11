@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>القرصنة الإلكترونية</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Tahoma", sans-serif;
+      color: white;
+      background: url("960x0.jpg") no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.6);
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: #00c8ff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    h1, h2 {
+      text-align: center;
+      text-shadow: 2px 2px 10px black;
+    }
+
+    h1 {
+      margin-top: 50px;
+      font-size: 36px;
+      color: #ff4d4d;
+    }
+
+    h2 {
+      margin-top: 60px;
+      font-size: 28px;
+      color: #00e0ff;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px 30px;
+      border-radius: 10px;
+      line-height: 1.8;
+      font-size: 18px;
+    }
+
+    section#threats {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px 30px;
+      border-radius: 10px;
+    }
+
+    section#threats ol {
+      padding-left: 20px;
+      line-height: 1.8;
+    }
+
+    section#threats li {
+      margin-bottom: 15px;
+    }
+
+    img {
+      display: block;
+      max-width: 80%;
+      margin: 30px auto;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.7);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">الرئيسية</a> |
+    <a href="protection.html">طرق الحماية</a> |
+    <a href="future.html">مستقبل الأمن السيبراني</a>
+  </nav>
+
+  <h1>القرصنة الإلكترونية</h1> 
+
+  <p>
+    القرصنة الإلكترونية هي محاولات للوصول غير المصرح به إلى أنظمة، بيانات أو شبكات بأهداف مختلفة — مالية، تجسسية، سياسية أو لمجرد التحدي. المعرفة بأنواع الهجمات وكيف تفكر الجهة المهاجمة يساعدك تحمي نفسك قبل ما يصير الضرر.
+  </p>
+
+  <img src="960x0.jpg">
+
+  <section id="threats" aria-labelledby="threats-title">
+    <h2 id="threats-title">أشهر أنواع الهجمات</h2>
+    <ol>
+      <li>
+        <strong>حقن SQL (SQL Injection)</strong> — إدخال استعلامات ضارة للوصول أو تعديل قواعد البيانات.
+      </li>
+      <li>
+        <strong>البرمجة النصية عبر المواقع (XSS)</strong> — حقن سكربتات تعمل في متصفح الضحية عبر محتوى غير معالج.
+      </li>
+      <li>
+        <strong>تزوير الطلبات عبر المواقع (CSRF)</strong> — إجبار مستخدم مسجّل على تنفيذ إجراءات عبر روابط أو نماذج مخادعة.
+      </li>
+      <li>
+        <strong>كسر المصادقة وإدارة الجلسات</strong> — سرقة جلسات أو كلمات مرور، ضعف في إدارة الجلسات.
+      </li>
+      <li>
+        <strong>تعريض البيانات الحسّاسة</strong> — نقل/تخزين بيانات دون تشفير أو حماية مناسبة.
+      </li>
+      <li>
+        <strong>مكوّنات تحتوي ثغرات معروفة</strong> — استخدام مكتبات/حزم قديمة يمكن استغلالها.
+      </li>
+      <li>
+        <strong>تهيئة أمان خاطئة (Security Misconfiguration)</strong> — إعدادات سيرفر/خدمات غير آمنة أو افتراضية.
+      </li>
+      <li>
+        <strong>حقن أوامر / تنفيذ أوامر عن بعد (Command Injection / RCE)</strong> — إدخال يسمح بتنفيذ أوامر نظام على الخادم.
+      </li>
+      <li>
+        <strong>إلغاء التسلسل غير الآمن (Insecure Deserialization)</strong> — استقبال كائنات مسلسلة قابلة للتعديل تؤدي لسلوك ضار.
+      </li>
+      <li>
+        <strong>حقن XML / XXE</strong> — استغلال محللات XML لتحميل موارد محلية أو خارجية ضارة.
+      </li>
+      <li>
+        <strong>Server‑Side Request Forgery (SSRF)</strong> — إجبار الخادم على طلب موارد داخلية أو خارجية باسم المهاجم.
+      </li>
+      <li>
+        <strong>التحكم بالوصول المعطّل (Broken Access Control)</strong> — وصول غير مصرّح به إلى بيانات أو وظائف بسبب تحقق وصول ضعيف.
+      </li>
+    </ol>
+  </section>
+
+</body>
+</html>
